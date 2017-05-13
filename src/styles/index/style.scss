@@ -1,0 +1,1208 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  min-width: 1276px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  height:inherit;
+  position: relative;
+}
+
+.intro {
+  background-color: #172227;
+  &:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity:0.4;
+    background-image: url('../../assets/intro/intro-background.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:100%;
+    background-size:100%;
+  }
+}
+.intro-header {
+  z-index: 1;
+  height: 130px;
+  position: relative;
+  &:before {
+    background-color: #999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:0.4;
+    content: '';
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.intro-header-content-logo {
+  text-align: center;
+  display: inline-block;
+  height: 130px;
+  float: left;
+  position: relative;
+  width: 300px;
+  line-height: 130px;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.intro-header-content-navigation {
+  width: 870px;
+  height: 130px;
+  float: right;
+  display: inline-block;
+}
+.header-navigation-top {
+  height: 70px;
+  border-bottom: 1px solid #adadad;
+}
+.nav-top-mail {
+  line-height: 70px;
+  display: inline-block;
+  font-size:15px;
+  img {
+    display: inline-block;
+    line-height: 70px;
+  }
+  span {
+    color: #ffffff;
+  }
+}
+.nav-top-phones {
+  display: inline-block;
+  margin-left: 70px;
+  line-height: 70px;
+  font-size: 20px;
+  span {
+    color: white;
+  }
+}
+.nav-top-callback {
+  display: inline-block;
+  line-height: 70px;
+  margin-left: 70px;
+  vertical-align: top;
+  font-size: 15px;
+  span {
+    color: #fff;
+  }
+}
+.header-navigation-bottom {
+  height: 60px;
+  ul {
+    display: block;
+    padding: 0;
+    text-align: justify;
+    line-height: 0;
+    font-size: 1px;
+    text-justify: newspaper;
+    zoom: 1;
+    text-align-last: justify;
+    &:after {
+      width: 100%;
+      height: 0;
+      visibility: hidden;
+      overflow: hidden;
+      content: '';
+      display: inline-block;
+    }
+  }
+  li {
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    vertical-align: top;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+    > a {
+      display: inline-block;
+      height: 60px;
+      cursor: pointer;
+      line-height: 60px;
+      text-decoration: none;
+      color: white;
+    }
+    &:hover,&:active {
+      color: #00c3ba;
+      transition: all 0.5s;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      bottom:1px;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: #00c3ba;
+      transform-origin:bottom;
+      transition:height 0.5s ease;
+      z-index:1;
+    }
+    &:hover:after,&:active:after {
+      height: 2px;
+    }
+  }
+}
+
+.intro-require {
+  text-align: center;
+  z-index: 1;
+  margin: 130px auto 0 auto;
+  width: 630px;
+  position: relative;
+  h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin:0 0 45px 0;
+    color: white;
+  }
+  form {
+    button {
+      text-align: center;
+      margin: 50px auto 0 auto;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-weight: bold;
+      color: #fff;
+      height: 60px;
+      cursor: pointer;
+      width: 270px;
+      border: none;
+      background-color: #00c3ba;
+      border-radius: 24px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 260px;
+        border-radius: 24px;
+        border: 5px solid #00aca4;
+      }
+    }
+  }
+}
+.require-inputs {
+  input {
+    height: 50px;
+    width: 270px;
+    display: inline-block;
+    border-radius: 3px;
+    border:0;
+    float: left;
+  }
+}
+.require-input-block {
+  float: left;
+  background-color: #fff;
+  display: inline-block;
+  width: 300px;
+  border-radius: 3px;
+  .require-input-image {
+    color: #b8b8b8;
+    float: left;
+    margin-left: 15px;
+    line-height:50px;
+
+    height: 15px;
+  }
+  input{
+    float: left;
+  }
+}
+.require-input-block._flr {
+  float: right;
+}
+.intro-scroll-bottom {
+  display: inline-block;
+  margin-top: 110px;
+  height: 60px;
+  width: 60px;
+  border-radius:50%;
+  background-image: url('../../assets/intro/intro-scroll-mouse.png');
+  background-repeat:no-repeat;
+  background-position: center;
+  line-height: 50px;
+  position: relative;
+  cursor: pointer;
+  &:before {
+    background-color: #999999;
+    opacity:0.4;
+    position:absolute;
+    top:0;
+    content: '';
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+.about {
+  background-image: url('../../assets/about/about-background.png');
+  text-align: center;
+}
+.about-heading {
+  margin:40px 0 35px 0;
+  h2 {
+    margin: 0;
+  }
+}
+.about-text {
+  width: 1000px;
+  margin: 0 auto 35px auto;
+  font-size: 17px;
+  font-weight:300;
+}
+.about-image {
+  width: 330px;
+  height: 180px;
+  border:4px solid white;
+  display: inline-block;
+  margin: 0 35px 0 35px;
+  &:first-child {
+    margin-left: 0;
+    background-image: url(../../assets/about/image1.jpg);
+  }
+  &:nth-child(2) {
+    background-image: url(../../assets/about/image2.jpg);
+  }
+  &:nth-child(3) {
+    background-image: url(../../assets/about/image3.jpg);
+    margin-right: 0;
+  }
+}
+.offers {
+  position: relative;
+  background-color: #000000;
+  text-align: center;
+  &:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity:0.4;
+    background-image: url('../../assets/offers/offers-background.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+  }
+}
+.offers-heading {
+  color: white;
+  margin: 50px 0 50px 0;
+}
+.offers-offering {
+  margin: 0 35px;
+  width: 330px;
+  height: 510px;
+  float: left;
+  border-radius: 10px;
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+  &:first-child {
+    margin-left: 20px;
+  }
+  &:last-child {
+    margin-right: 20px;
+  }
+}
+.first-offering:after{
+  background-image: url(../../assets/offers/first.png);
+}
+.second-offering:after{
+  background-image: url(../../assets/offers/second.png);
+}
+.third-offering:after{
+  background-image: url(../../assets/offers/third.png);
+}
+.offering-top {
+  height: 115px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  background-color: #f3f3f3;
+  &:after {
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    background-color: #eeeeee;
+    background-repeat:no-repeat;
+    background-position: center;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 0;
+  }
+  h3 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight:bold;
+    margin: 30px 0 0 0;
+    text-transform: uppercase;
+  }
+}
+.offering-content {
+  h4 {
+    margin:75px auto 70px auto;
+    font-size: 15px;
+    width: 285px;
+    display: block;
+    font-weight: 300;
+  }
+  button {
+    width: 170px;
+    height: 50px;
+    background-color: #00c3ba;
+    border-radius: 20px;
+    border: 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.aluminium-constructions {
+  background-image: url(../../assets/aluminium-constructions/al-const-bg.png);
+  text-align: center;
+}
+.aluminium-constructions-heading {
+  margin: 50px 0 40px 0;
+}
+
+.al-const-sections {
+  margin: 0;
+  text-align: left;
+  border-bottom: 2px solid #00c3ba;
+}
+.al-const-section {
+  position: relative;
+  width: 150px;
+  float: left;
+  text-align: center;
+  display: inline-block;
+  margin: 0 25px;
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: '';
+    background-image: url(../../assets/aluminium-constructions/trigger.png);
+    height: 10px;
+    width: 10px;
+    display: none;
+  }
+  h5 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &:first-child {
+    margin-left: 10px;
+    .al-const-section-image {
+      background-image: url(../../assets/aluminium-constructions/icon-first.png);
+    }
+  }
+  &:nth-child(2) {
+    .al-const-section-image {
+      background-image: url(../../assets/aluminium-constructions/icon-second.png);
+    }
+  }
+  &:nth-child(3) {
+    .al-const-section-image {
+      background-image: url(../../assets/aluminium-constructions/icon-third.png);
+    }
+  }
+
+  &:nth-child(4) {
+    .al-const-section-image {
+      background-image: url(../../assets/aluminium-constructions/icon-fourth.png);
+    }
+  }
+
+  &:nth-child(5) {
+    .al-const-section-image {
+      background-image: url(../../assets/aluminium-constructions/icon-fifth.png);
+    }
+  }
+
+  &:last-child {
+    margin-right: 10px;
+    .al-const-section-image {
+      background-image: url(../../assets/aluminium-constructions/icon-sixth.png);
+    }
+  }
+}
+.al-const-section._active{
+  .al-const-section-image {
+    border-color: #00c3ba;
+  }
+  &:after {
+    display: block;
+  }
+}
+
+.al-const-section-image {
+  height: 150px;
+  border-radius: 50%;
+  border:2px solid #bfbfbf;
+  background-repeat:no-repeat;
+  background-position: center;
+  cursor: pointer;
+  &:hover,&:active {
+    border-color: #00c3ba;
+  }
+}
+.al-const-slider {
+  position: relative;
+  margin-top: 45px;
+  .slick-prev {
+    left: 10px;
+    z-index: 55;
+  }
+  .slick-next {
+    right: 10px;
+    z-index: 55;
+  }
+  //.slick-prev:before {
+  //  content: "<";
+  //  color: #bbbbbb;
+  //  font-size: 30px;
+  //  &:hover {
+  //    color: #00c3ba;
+  //  }
+  //}
+  //.slick-next:before {
+  //  content: ">";
+  //  color: #bbbbbb;
+  //  font-size: 30px;
+  //  &:hover {
+  //    color: #00c3ba;
+  //  }
+  //}
+}
+.al-arrow-next,.al-arrow-prev{
+  position: absolute;
+  bottom: 160px;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  cursor: pointer;
+  &:hover {
+    color: #00c3ba;
+  }
+}
+.al-arrow-next {
+  right: -35px;
+  //background-image: url(../../assets/aluminium-constructions/arrow-next.png);
+}
+.al-arrow-prev {
+  left: -35px;
+  //background-image: url(../../assets/aluminium-constructions/arrow-prev.png);
+}
+
+.al-const-slide {
+  height: 300px;
+  position: relative;
+}
+.al-const-slide-container {
+  width:1050px;
+  margin: 0 auto;
+}
+.slide-image {
+  float: left;
+  width: 420px;
+  height: 300px;
+  background-image: url(../../assets/aluminium-constructions/slide-1-image.png);
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.slide-content {
+  width: 630px;
+  height: 300px;
+  float: left;
+  text-align: left;
+  h6 {
+    margin: 25px 0 0 0;
+    font-weight: bold;
+    font-size: 26px;
+    color: #00c3ba;
+  }
+  p {
+    margin:30px 0 0 0;
+    font-weight: 300;
+    font-size: 17px;
+  }
+  button {
+    margin:35px 0 0 0;
+    border-radius:24px;
+    background-color: #00c3ba;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+  }
+}
+
+
+.glass-constructions {
+  position: relative;
+  background-color: #0f2e3d;
+  text-align: center;
+  &:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity:0.3;
+    background-image: url('../../assets/glass-constructions/gc-background.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+  }
+}
+
+.glass-constructions-heading {
+  color: #fff;
+  margin: 50px 0 40px 0;
+}
+
+.gl-const-gallery-item {
+  display: inline-block;
+  width: 330px;
+  float: left;
+  height: 290px;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  margin: 0 35px;
+  position: relative;
+  &:first-child {
+    background-image: url(../../assets/glass-constructions/image-1-static.jpg);
+    margin-left: 20px;
+    margin-bottom:70px;
+    &:hover,&:active {
+      background-image: url(../../assets/glass-constructions/image-1-hover.jpg)
+    }
+  }
+  &:nth-child(2) {
+    background-image: url(../../assets/glass-constructions/image-2-static.jpg);
+    margin-bottom:70px;
+    &:hover,&:active {
+      background-image: url(../../assets/glass-constructions/image-2-hover.jpg)
+    }
+  }
+  &:nth-child(3) {
+    background-image: url(../../assets/glass-constructions/image-3-static.jpg);
+    margin-bottom:70px;
+    margin-right: 20px;
+    &:hover,&:active {
+      background-image: url(../../assets/glass-constructions/image-3-hover.jpg)
+    }
+  }
+  &:nth-child(4) {
+    background-image: url(../../assets/glass-constructions/image-4-static.jpg);
+    margin-left: 20px;
+    &:hover,&:active {
+      //background-image: url(../../assets/glass-constructions/image-4-hover.jpg)
+    }
+  }
+  &:nth-child(5) {
+    background-image: url(../../assets/glass-constructions/image-5-static.jpg);
+    &:hover,&:active {
+      background-image: url(../../assets/glass-constructions/image-5-hover.jpg)
+    }
+  }
+  &:last-child {
+    background-image: url(../../assets/glass-constructions/image-6-static.jpg);
+    margin-right: 20px;
+    &:hover,&:active {
+      //background-image: url(../../assets/glass-constructions/image-6-hover.jpg)
+    }
+  }
+}
+.gl-gallery-item-hovered {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    height: 50px;
+    z-index: 50;
+    width: 50px;
+  background-image: url(../../assets/glass-constructions/zoom.png);
+  background-position: center;
+  background-repeat:no-repeat;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    &:before {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      content: '';
+      opacity:0.4;
+      background-color: #000000;
+    }
+
+}
+._galleryActive {
+  .gl-gallery-item-top,.gl-gallery-item-bottom {
+    h3 {
+      color: white;
+    }
+    background-color: #00aca4;
+  }
+  .gl-gallery-item-hovered {
+      display: inline-block;
+  }
+}
+.gl-gallery-item-top {
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  h3 {
+    display: inline-block;
+    margin:30px 0 0 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.gl-gallery-item-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.our-projects {
+  background-image: url(../../assets/our-projects/our-projects-bg.png);
+  position: relative;
+  text-align: center;
+}
+.our-projects-heading {
+  margin: 50px 0 35px 0;
+}
+
+.our-projects-slider {
+  height: 370px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.pr-arrow-next,.pr-arrow-prev{
+  position: absolute;
+  bottom: 50%;
+  width: 32px;
+  height: 32px;
+  z-index: 55;
+  font-size: 32px;
+  cursor: pointer;
+  &:hover {
+    color: #00c3ba;
+  }
+}
+.pr-arrow-next {
+  right: -35px;
+  //background-image: url(../../assets/aluminium-constructions/arrow-next.png);
+}
+.pr-arrow-prev {
+  left: -35px;
+  //background-image: url(../../assets/aluminium-constructions/arrow-prev.png);
+}
+.our-projects-slide-content {
+  text-align: left;
+  margin:45px 0 0 35px;
+  width: 540px;
+  float: left;
+  h4 {
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    font-size: 26px;
+    color: #00aca4;
+  }
+  p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 17px;
+  }
+}
+.our-projects-slide-image {
+  margin:30px 0 0 60px;
+  height: 310px;
+  width: 510px;
+  float: left;
+}
+.our-projects-slide-image-1 {
+  background-image: url(../../assets/our-projects/image-1.jpg);
+  -webkit-background-size:cover;
+  background-size:cover;
+}
+.our-projects-slide-image-2 {
+  background-image: url(../../assets/our-projects/image-2.jpg);
+  -webkit-background-size:cover;
+  background-size:cover;
+}
+.our-projects-slide-image-3 {
+  background-image: url(../../assets/our-projects/image-3.jpg);
+  -webkit-background-size:cover;
+  background-size:cover;
+}
+.our-projects-slide-image-4 {
+  background-image: url(../../assets/our-projects/image-4.jpg);
+  -webkit-background-size:cover;
+  background-size:cover;
+}
+
+.our-projects-slider-nav {
+  margin-top: 30px;
+}
+.our-projects-slider-nav-slide {
+  width: 270px;
+  height: 150px;
+  border:4px solid white;
+  float: left;
+  margin: 0 15px;
+  display: inline-block;
+  cursor: pointer;
+  &:first-child {
+    background-image: url(../../assets/our-projects/image-1.jpg);
+    margin-left: 0;
+  }
+  &:nth-child(2) {
+ background-image: url(../../assets/our-projects/image-2.jpg);
+  }
+  &:nth-child(3) {
+ background-image: url(../../assets/our-projects/image-3.jpg);
+  }
+  &:last-child {
+ background-image: url(../../assets/our-projects/image-4.jpg);
+    margin-right: 0;
+  }
+}
+.numbers {
+  position: relative;
+  text-align: center;
+  background-color: #1c3237;
+  &:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity:0.3;
+    background-image: url('../../assets/numbers/numbers-bg.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+  }
+}
+.numbers-heading {
+  color: white;
+  margin:90px 0 70px 0;
+}
+.numbers-item {
+  height: 270px;
+  display: inline-block;
+  width: 270px;
+  span {
+    display: block;
+    margin-top:30px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+  }
+}
+.numbers-item-circle {
+  width: 130px;
+  height: 130px;
+  display: inline-block;
+  background-color: #00aca4;
+  border-radius: 50%;
+  border:0;
+  color: white;
+  p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130px;
+  }
+}
+.our-recalls {
+  background-image: url(../../assets/our-recalls/our-recalls-bg.png);
+  position: relative;
+  text-align: center;
+}
+.our-recalls-heading {
+  margin:50px 0 35px 0;
+}
+.our-recalls-item {
+  height: 180px;
+  width: 970px;
+}
+.our-recalls-item._ori2 {
+  margin-top: 40px;
+  margin-left:100px;
+}
+.our-recalls-item._ori3 {
+  margin-top: 40px;
+  margin-left:200px;
+}
+._oria1 {
+  background-image: url(../../assets/our-recalls/avatar-1.jpg);
+  background-position: -45px 0;
+}
+._oria2 {
+  background-image: url(../../assets/our-recalls/avatar-2.jpg);
+  background-position: -85px 0;
+}
+._oria3 {
+  background-image: url(../../assets/our-recalls/avatar-3.jpg);
+  background-position: -85px 0;
+}
+.our-recalls-item-avatar {
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  border:4px solid white;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  float: left;
+}
+.our-recalls-item-comment {
+  text-align: left;
+  display: inline-block;
+  margin-left:30px;
+  width: 770px;
+  height: 170px;
+  float: left;
+  border-bottom:2px solid #00c3ba;
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin:0 0 15px 0;
+  }
+  h5 {
+    font-size: 17px;
+    font-weight: 300;
+    margin:0 0 20px 0;
+    color: #00c3ba;
+  }
+  p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 300;
+  }
+}
+.our-partners {
+  background-color: #10292f;
+  position: relative;
+  text-align: center;
+  &:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity:0.2;
+    background-image: url('../../assets/partners/partnetrs-background.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+  }
+}
+.our-partners-heading {
+  margin:70px 0 35px 0;
+  color: white;
+}
+.our-partners-content {
+  text-align: left;
+  p {
+    margin: 0 0 45px 0;
+    display: block;
+    font-weight: 300;
+    color: white;
+    font-size: 17px;
+  }
+  ul {
+    height: 90px;
+    display: block;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    width: 170px;
+    height: 90px;
+    margin: 0 15px;
+    float: left;
+    background-color: white;
+    border-radius: 5px;
+    border: 0;
+    &:first-child {
+      margin-left: 0;
+      background-image: url(../../assets/partners/logo-1.png);
+      background-position: center;
+      background-repeat:no-repeat;
+    }
+    &:nth-child(2) {
+      background-image: url(../../assets/partners/logo-2.png);
+      background-position: center;
+      background-repeat:no-repeat;
+    }
+    &:nth-child(3) {
+      background-image: url(../../assets/partners/logo-3.png);
+      background-position: center;
+      background-repeat:no-repeat;
+    }
+    &:nth-child(4) {
+      background-image: url(../../assets/partners/logo-4.png);
+      background-position: center;
+      background-repeat:no-repeat;
+    }
+    &:nth-child(5) {
+      background-image: url(../../assets/partners/logo-5.png);
+      background-position: center;
+      background-repeat:no-repeat;
+    }
+    &:last-child {
+      margin-right: 0;
+      background-image: url(../../assets/partners/logo-6.png);
+      background-position: center;
+      background-repeat:no-repeat;
+    }
+  }
+}
+.our-map {
+  text-align: center;
+  background-image: url(../../assets/our-map/our-map-bg.jpg);
+  position: relative;
+  -webkit-background-size:150%;
+  background-size:150%;
+  background-position: -300px 0;
+  background-repeat:no-repeat;
+}
+.our-map-heading {
+  margin-top: 50px;
+}
+.our-map-content {
+  width: 680px;
+  margin-top:210px;
+  background-color: white;
+  display: inline-block;
+  border-bottom:2px solid #00c3ba;
+  height: 170px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+    > span {
+      color: #00c3ba;
+    }
+  }
+  > span {
+    font-size:17px;
+    display: block;
+    margin-bottom:15px;
+  }
+}
+
+.footer {
+  background-color: #061218;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  &:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity:0.3;
+    background-image: url('../../assets/footer/footer-background.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+  }
+}
+.footer-heading {
+  position: relative;
+  color: #00c3ba;
+  margin: 65px 0 30px 0;
+}
+.footer-text {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  color: white;
+  margin-bottom:60px;
+}
+.footer-form {
+  position: relative;
+  width: 820px;
+  display: inline-block;
+  input {
+    width: 260px;
+    margin: 0 10px;
+    float: left;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    &:first-child {
+      margin-left:0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  button {
+    text-align: center;
+    margin: 50px auto 0 auto;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    height: 50px;
+    cursor: pointer;
+    width: 230px;
+    border: none;
+    background-color: #00c3ba;
+    border-radius: 24px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 220px;
+      border-radius: 24px;
+      border: 5px solid #00aca4;
+    }
+  }
+}
+.footer-navigation {
+  height: 110px;
+  margin-top: 60px;
+  line-height:110px;
+  position: relative;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #040b0e;
+    opacity: 0.4;
+  }
+  p {
+    position: relative;
+    margin: 0;
+    float: left;
+    color: white;
+    font-size: 15px;
+    line-height: 110px;
+    >span {
+      position: relative;
+      color: #00c3ba;
+    }
+  }
+}
+.footer-content-logo {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  height: 110px;
+  margin-right:50px;
+  float: left;
+  width: 300px;
+  line-height: 110px;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.footer-icons {
+  display: inline-block;
+  height:25px;
+  float: right;
+  i {
+    display: inline-block;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    margin-left:15px;
+    width: 25px;
+    height: 25px;
+    background-color: #00c3ba;
+    line-height: 25px;
+    font-size: 16px;
+  }
+}

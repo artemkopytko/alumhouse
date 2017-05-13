@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alumhouse</title>
+    <link rel="stylesheet" href="./src/styles/shared/normalize.css">
+    <link rel="stylesheet" href="./src/styles/shared/loader.css">
+</head>
+<body onload="setTimeout(function () {document.getElementsByTagName('body')[0].className += 'loaded'},1000)">
+<div id="loader-wrapper">
+<div id="loader"></div>
+<div class="loader-section section-left"></div>
+<div class="loader-section section-right"></div>
+</div>
+<script src="./src/scripts/jquery-3.2.0.min.js"></script>
+<script src="./src/scripts/SmoothScroll.js"></script>
+<link rel="stylesheet" href="./src/styles/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./src/styles/slick-1.6.0/slick/slick.css">
+<link rel="stylesheet" href="./src/styles/slick-1.6.0/slick/slick-theme.css">
+<script src="./src/styles/slick-1.6.0/slick/slick.js"></script>
+<link rel="stylesheet" href="./src/styles/index/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+<script src="./src/scripts/sliderHandler.js"></script>
+<script src="./src/scripts/galleryHandler.js"></script>
+<div class="wrapper">
+    <div class="content">
+        <div class="intro block-large">
+            <!--730px-->
+            <div class="intro-header">
+             <div class="container">
+                  <div class="intro-header-content clearfix">
+                          <div class="intro-header-content-logo">
+                              <img src="./src/assets/header/header-logo.png" alt="">
+                          </div>
+                       <div class="intro-header-content-navigation">
+                           <div class="header-navigation-top">
+                               <div class="nav-top-mail">
+                                   <img src="./src/assets/header/mail.png" alt="mail">
+                                   <span>alumhouse@mail.ru</span>
+                               </div>
+                               <div class="nav-top-phones">
+                                   <img src="./src/assets/header/phone.png" alt="phone">
+                                   <span>8 (495) 665-29-56   |   8 (926) 253-40-88</span>
+                               </div>
+                               <div class="nav-top-callback">
+                                   <img src="./src/assets/header/callback.png" alt="callback">
+                                   <span>Заказать звонок</span>
+                               </div>
+                           </div>
+                           <div class="header-navigation-bottom">
+                               <ul>
+                                   <li><a href="/">Главная</a></li>
+                                   <li><a href="#Services">Услуги</a></li>
+                                   <li><a href="#AluminiumConstructions">Алюминиевые конструкции</a></li>
+                                   <li><a href="#GlassConstructions">Стеклянные конструкции</a></li>
+                                   <li><a href="">Новости</a></li>
+                                   <li><a href="#Projects">Проекты</a></li>
+                                   <li><a href="#Contacts">Контакты</a></li>
+                               </ul>
+                           </div>
+                       </div>
+                    </div>
+             </div>
+
+            </div>
+            <div class="intro-require">
+                <h1>Взгляните <br>
+                    через стекло по новому</h1>
+                <form>
+                    <div class="require-inputs clearfix">
+                        <div class="require-input-block clearfix">
+                            <div class="require-input-image">
+                                <img src="./src/assets/header/form-user.png" alt="user">
+                            </div>
+                            <input type="text">
+                        </div>
+                        <div class="require-input-block clearfix _flr">
+                            <div class="require-input-image">
+                                <img src="./src/assets/header/form-phone.png" alt="user">
+                            </div>
+                            <input type="text" class="_flr">
+                        </div>
+                    </div>
+                    <button>
+                        Отправить заявку
+                    </button>
+                </form>
+                <a href="#Services"><div class="intro-scroll-bottom"></div></a>
+            </div>
+        </div>
+        <div class="about block-medium">
+            <!--600px-->
+            <div class="container">
+                <div class="about-heading heading">
+                    <h2>Мы являемся лидером на рынке светопрозрачных  конструкций</h2>
+                </div>
+                <div class="about-text">
+                    <span>«Alum<span style="color: #00c3ba;">house</span>» является лидером в разработке проектов, производстве, поставке, и монтаже фасадных систем и стеклянных конструкций, реализовывая свои проекты на рынке светопрозрачных конструкций с 2011 года. С самого истока зарождения наши специалисты плодотворно решают вопросы для использования высоких технологий, подходов проектирования, и реализацией проектов любой сложности, воплощая самые нестандартные архитектурные идеи и задумки Заказчиков, Архитекторов и Дизайнеров. Наша команда сотрудничает с теми, кто идёт в одну ногу со временем, предлагая высокоэффективные архитектурные решения. Реализация наших проектов происходит с самыми жесткими стандартами качества производственной практики. Особый вклад мы вносим в безотходное производство, энергоэффективность и энергосбережение. Компания следует руководящим принципом и многолетней практикой безопасности, для выполнения всех монтажных работ самым безопасным способом. Начать и окончить все наши проекты в нужный срок, не нарушая качество и рамки бюджета, вот наша цель!</span>
+                </div>
+                <div class="about-images">
+                    <div class="about-image"></div>
+                    <div class="about-image"></div>
+                    <div class="about-image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="offers block-large" id="Services">
+            <div class="container">
+                <div class="offers-heading heading">Мы предлагаем</div>
+                <div class="offers-offerings">
+                    <div class="offers-offering">
+                        <div class="offering-top first-offering">
+                            <h3>Проектирование</h3>
+                        </div>
+                        <div class="offering-content">
+                            <h4>Наш конструкторский отдел готов реализовать проект любой сложности, в абсолютно короткие сроки для заказчика. Также мы  обеспечиваем полное сопровождение проекта до окончания монтажа конструкций с полной консультацией и выездом на ваш объект.</h4>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="offers-offering">
+                        <div class="offering-top second-offering">
+                            <h3>Изготовление</h3>
+                        </div>
+                        <div class="offering-content">
+                            <h4>Наличие у нас собственной производственной линии, позволяет нам изготовлять изделия любой сложности, качественно, а главное в точно оговоренные сроки. Мы предлагаем свои услуги в изготовлении готовых конструкций, либо перерабатывать профиль по чертежам заказчика с давальческим сырьём.</h4>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="offers-offering">
+                        <div class="offering-top third-offering">
+                            <h3>Монтаж</h3>
+                        </div>
+                        <div class="offering-content">
+                            <h4>Основное преимущество нашей компании это наличие в штате собственного подразделения, состоящего из высококвалифицированных монтажных бригад. Мы предлагаем монтаж собственных изделий изготовленных на другом производстве.</h4>
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aluminium-constructions block-large" id="AluminiumConstructions">
+            <div class="container">
+                <div class="aluminium-constructions-heading heading">Алюминиевые конструкции</div>
+                <div class="aluminium-constructions-content">
+                    <div class="al-const-sections clearfix">
+                        <div class="al-const-section _active" id="Aluminium1">
+                            <div class="al-const-section-image" id="AluminiumImg1"></div>
+                            <h5>Зимние сады <br><br></h5>
+                        </div>
+                        <div class="al-const-section" id="Aluminium2">
+                            <div class="al-const-section-image" id="AluminiumImg2"></div>
+                            <h5>Фасадное остекление</h5>
+                        </div>
+                        <div class="al-const-section" id="Aluminium3">
+                            <div class="al-const-section-image" id="AluminiumImg3"></div>
+                            <h5>Зенитные фонари</h5>
+                        </div>
+                        <div class="al-const-section" id="Aluminium4">
+                            <div class="al-const-section-image" id="AluminiumImg4"></div>
+                            <h5>Алюминиевые окна</h5>
+                        </div>
+                        <div class="al-const-section" id="Aluminium5">
+                            <div class="al-const-section-image" id="AluminiumImg5"></div>
+                            <h5>Двери гармошки<br><br></h5>
+                        </div>
+                        <div class="al-const-section" id="Aluminium6">
+                            <div class="al-const-section-image" id="AluminiumImg6"></div>
+                            <h5>Раздвижные двери</h5>
+                        </div>
+                    </div>
+                    <div class="al-arrow-prev">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <div class="al-const-slider">
+                        <div class="al-const-slide al-const-slide-1 clearfix">
+                            <div class="al-const-slide-container clearfix">
+                                <div class="slide-image"></div>
+                                <div class="slide-content">
+                                    <h6>Зимние сады</h6>
+                                    <p>Преимущество зимнего сада в том, что при помощи такой конструкции можно максимально  увеличить полезную площадь пристроив её к существующему дому, либо сделать отдельно стоящую конструкцию в качестве оранжереи. Зимний сад можно красить в любой цвет по шкале RAL либо декорировать под структуру дерева.</p>
+                                    <button>Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="al-const-slide al-const-slide-2 clearfix">
+                            <div class="al-const-slide-container clearfix">
+                            <div class="slide-image"></div>
+                            <div class="slide-content">
+                                <h6>Фасадное остекление</h6>
+                                <p>Преимущество зимнего сада в том, что при помощи такой конструкции можно максимально  увеличить полезную площадь пристроив её к существующему дому, либо сделать отдельно стоящую конструкцию в качестве оранжереи. Зимний сад можно красить в любой цвет по шкале RAL либо декорировать под структуру дерева.</p>
+                                <button>Подробнее</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="al-const-slide al-const-slide-3 clearfix">
+                            <div class="al-const-slide-container clearfix">
+                            <div class="slide-image"></div>
+                            <div class="slide-content">
+                                <h6>Зенитные фонари</h6>
+                                <p>Преимущество зимнего сада в том, что при помощи такой конструкции можно максимально  увеличить полезную площадь пристроив её к существующему дому, либо сделать отдельно стоящую конструкцию в качестве оранжереи. Зимний сад можно красить в любой цвет по шкале RAL либо декорировать под структуру дерева.</p>
+                                <button>Подробнее</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="al-const-slide al-const-slide-4 clearfix">
+                            <div class="al-const-slide-container clearfix">
+                            <div class="slide-image"></div>
+                            <div class="slide-content">
+                                <h6>Алюминиевые окна</h6>
+                                <p>Преимущество зимнего сада в том, что при помощи такой конструкции можно максимально  увеличить полезную площадь пристроив её к существующему дому, либо сделать отдельно стоящую конструкцию в качестве оранжереи. Зимний сад можно красить в любой цвет по шкале RAL либо декорировать под структуру дерева.</p>
+                                <button>Подробнее</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="al-const-slide al-const-slide-5 clearfix">
+                            <div class="al-const-slide-container clearfix">
+                            <div class="slide-image"></div>
+                            <div class="slide-content">
+                                <h6>Двери гармошки</h6>
+                                <p>Преимущество зимнего сада в том, что при помощи такой конструкции можно максимально  увеличить полезную площадь пристроив её к существующему дому, либо сделать отдельно стоящую конструкцию в качестве оранжереи. Зимний сад можно красить в любой цвет по шкале RAL либо декорировать под структуру дерева.</p>
+                                <button>Подробнее</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="al-const-slide al-const-slide-6 clearfix">
+                            <div class="al-const-slide-container clearfix">
+                            <div class="slide-image"></div>
+                            <div class="slide-content">
+                                <h6>Раздвижные двери</h6>
+                                <p>Преимущество зимнего сада в том, что при помощи такой конструкции можно максимально  увеличить полезную площадь пристроив её к существующему дому, либо сделать отдельно стоящую конструкцию в качестве оранжереи. Зимний сад можно красить в любой цвет по шкале RAL либо декорировать под структуру дерева.</p>
+                                <button>Подробнее</button>
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="al-arrow-next">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="glass-constructions block-extralarge" id="GlassConstructions">
+            <!--870px-->
+            <div class="container">
+                <div class="glass-constructions-heading heading">Стеклянные конструкции</div>
+                <div class="glass-constructions-gallery clearfix">
+                    <!--<div class="gl-const-gallery-row clearfix">-->
+                        <div class="gl-const-gallery-item" id="GalleryItem1">
+                            <div class="gl-gallery-item-top">
+                                <h3>Стеклянные перегородки</h3>
+                            </div>
+                            <div class="gl-gallery-item-hovered">
+                            </div>
+                            <div class="gl-gallery-item-bottom"></div>
+                        </div>
+                        <div class="gl-const-gallery-item" id="GalleryItem2">
+                            <div class="gl-gallery-item-top">
+                                <h3>Рамные перегородки</h3>
+                            </div>
+                            <div class="gl-gallery-item-hovered">
+                            </div>
+                            <div class="gl-gallery-item-bottom"></div>
+                        </div>
+                        <div class="gl-const-gallery-item" id="GalleryItem3">
+                            <div class="gl-gallery-item-top">
+                                <h3>Стеклянные козырьки</h3>
+                            </div>
+                            <div class="gl-gallery-item-hovered">
+                            </div>
+                            <div class="gl-gallery-item-bottom"></div>
+                        </div>
+                    <!--</div>-->
+                    <!--<div class="gl-const-gallery-row clearfix">-->
+                        <div class="gl-const-gallery-item" id="GalleryItem4">
+                            <div class="gl-gallery-item-top">
+                                <h3>Стеклянные ограждения</h3>
+                            </div>
+                            <div class="gl-gallery-item-hovered">
+                            </div>
+                            <div class="gl-gallery-item-bottom"></div>
+                        </div>
+                        <div class="gl-const-gallery-item" id="GalleryItem5">
+                            <div class="gl-gallery-item-top">
+                                <h3>Раздвижные перегородки</h3>
+                            </div>
+                            <div class="gl-gallery-item-hovered">
+                            </div>
+                            <div class="gl-gallery-item-bottom"></div>
+                        </div>
+                        <div class="gl-const-gallery-item" id="GalleryItem6">
+                            <div class="gl-gallery-item-top">
+                                <h3>Слайдер перегородки</h3>
+                            </div>
+                            <div class="gl-gallery-item-hovered">
+                            </div>
+                            <div class="gl-gallery-item-bottom"></div>
+                        </div>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+        <div class="our-projects block-large" id="Projects">
+            <div class="container">
+                <div class="our-projects-heading heading">Реализованные проекты</div>
+                <div class="our-projects-content">
+
+                    <div class="pr-arrow-prev">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <div class="our-projects-slider">
+                        <div class="our-projects-slide clearfix">
+                            <div class="our-projects-slide-content">
+                                <h4>Остекление загородного дома. Клубничные поля.</h4>
+                                <p><strong>Площадь остекления:</strong><br><br>
+                                    Алюминиевые конструкции  176 м2. <br><br>
+
+                                    <strong>Система:</strong> <br><br>
+                                    New Tec SY 68, SY 150 ,(Италия). Raynaers CP 155 LS (Бельгия.) <br><br>
+
+                                    <strong>Особенности:</strong> <br><br>
+                                    Применение MF и I стекла. Подъемно-радвижные двери Raynaers. Декорирование профиля под структуру дерева.</p>
+                                <br><br>
+                            </div>
+                            <div class="our-projects-slide-image our-projects-slide-image-1"></div>
+                        </div>
+                        <div class="our-projects-slide clearfix">
+                            <div class="our-projects-slide-content">
+                                <h4>Остекление загородного дома. Клубничные поля.</h4>
+                                <p><strong>Площадь остекления:</strong><br><br>
+                                    Алюминиевые конструкции  176 м2. <br><br>
+
+                                    <strong>Система:</strong> <br><br>
+                                    New Tec SY 68, SY 150 ,(Италия). Raynaers CP 155 LS (Бельгия.) <br><br>
+
+                                    <strong>Особенности:</strong> <br><br>
+                                    Применение MF и I стекла. Подъемно-радвижные двери Raynaers. Декорирование профиля под структуру дерева.</p>
+                                <br><br>
+                            </div>
+                            <div class="our-projects-slide-image our-projects-slide-image-2"></div>
+                        </div>
+                        <div class="our-projects-slide clearfix">
+                            <div class="our-projects-slide-content">
+                                <h4>Остекление загородного дома. Клубничные поля.</h4>
+                                <p><strong>Площадь остекления:</strong><br><br>
+                                    Алюминиевые конструкции  176 м2. <br><br>
+
+                                    <strong>Система:</strong> <br><br>
+                                    New Tec SY 68, SY 150 ,(Италия). Raynaers CP 155 LS (Бельгия.) <br><br>
+
+                                    <strong>Особенности:</strong> <br><br>
+                                    Применение MF и I стекла. Подъемно-радвижные двери Raynaers. Декорирование профиля под структуру дерева.</p>
+                                <br><br>
+                            </div>
+                            <div class="our-projects-slide-image our-projects-slide-image-3"></div>
+                        </div>
+                        <div class="our-projects-slide clearfix">
+                            <div class="our-projects-slide-content">
+                                <h4>Остекление загородного дома. Клубничные поля.</h4>
+                                <p><strong>Площадь остекления:</strong><br><br>
+                                    Алюминиевые конструкции  176 м2. <br><br>
+
+                                    <strong>Система:</strong> <br><br>
+                                    New Tec SY 68, SY 150 ,(Италия). Raynaers CP 155 LS (Бельгия.) <br><br>
+
+                                    <strong>Особенности:</strong> <br><br>
+                                    Применение MF и I стекла. Подъемно-радвижные двери Raynaers. Декорирование профиля под структуру дерева.</p>
+                                <br><br>
+                            </div>
+                            <div class="our-projects-slide-image our-projects-slide-image-4"></div>
+                        </div>
+                    </div>
+                    <div class="pr-arrow-next">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                    <div class="our-projects-slider-nav">
+                        <div class="our-projects-slider-nav-slide" id="ProjectsHelper1"></div>
+                        <div class="our-projects-slider-nav-slide" id="ProjectsHelper2"></div>
+                        <div class="our-projects-slider-nav-slide" id="ProjectsHelper3"></div>
+                        <div class="our-projects-slider-nav-slide" id="ProjectsHelper4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="numbers block-small">
+            <!--500px-->
+            <div class="container">
+                <div class="numbers-heading heading">О нас в цифрах</div>
+                <div class="numbers-items clearfix">
+                    <div class="numbers-item">
+                        <div class="numbers-item-circle">
+                            <p>9500 м<sup>2</sup></p>
+                        </div>
+                        <span>Остеклённых площадей за  1,5 года</span>
+                    </div>
+                    <div class="numbers-item">
+                        <div class="numbers-item-circle">
+                            <p>25</p>
+                        </div>
+                        <span>Проектов общей площадью остекления от 120 м2</span>
+                    </div>
+                    <div class="numbers-item">
+                        <div class="numbers-item-circle">
+                            <p>127</p>
+                        </div>
+                        <span>Проектов общей площадью остекления от 25 м2 до 95 м2</span>
+                    </div>
+                    <div class="numbers-item">
+                        <div class="numbers-item-circle">
+                            <p>11 лет</p>
+                        </div>
+                        <span>Опыта работы у наших специалистов</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="our-recalls block-larger">
+            <!--780px-->
+            <div class="container">
+                <div class="our-recalls-heading heading">Отзывы наших клиентов</div>
+                <div class="our-recalls-item clearfix">
+                    <div class="our-recalls-item-avatar _oria1"></div>
+                    <div class="our-recalls-item-comment">
+                        <h3>Кирилл Синяков</h3>
+                        <h5>Москва</h5>
+                        <p>Работать с "Алюмхаус" понравилось. Выбирал подрядчика по остеклению моего дома, остановился на этой компании. Сделали хорошую скидку, привезли образцы, выбрал то что нужно. Все остекление  установили и изготовили в срок. </p>
+                    </div>
+                </div>
+                <div class="our-recalls-item _ori2 clearfix">
+                    <div class="our-recalls-item-avatar _oria2"></div>
+                    <div class="our-recalls-item-comment">
+                        <h3>Евгения Никитна</h3>
+                        <h5>Щёлково, Московская область</h5>
+                        <p>Спасибо огромное вышей фирме за проведенные работы по монтажу стеклянных перегородок, особенная благодарность Мичурину Александру, все выполнено быстро, аккуратно, отдельно спасибо за чистоту оставленную после себя. Так же спасибо за проделанную предпроектную работу и постоянные консультации и обратную связь</p>
+                    </div>
+                </div>
+                <div class="our-recalls-item _ori3 clearfix">
+                    <div class="our-recalls-item-avatar _oria3"></div>
+                    <div class="our-recalls-item-comment">
+                        <h3>Илона</h3>
+                        <h5>Москва</h5>
+                        <p>На протяжении 7 лет занимаюсь ландшафтным дизайном, часто по желанию заказчика есть необходимость в конструкции в виде оранжереи или зимнего сада, спасибо компании "Алюмхаус" за разработку проекта зимнего сада с последующей его реализацией под ключ. Отдельное спасибо за бесплатную визуализацию объекта при расчете стоимости, это огромный + на стадии переговоров.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="our-partners block-small">
+            <div class="container">
+                <div class="our-partners-heading heading">Наши партнеры</div>
+                <div class="our-partners-content">
+                    <p>Многолетний опыт работы с самыми нестандартными и технически сложными проектами даёт нам возможность максимально быстро предложить каждому клиенту практически любое решение любой архитектурной или инженерной задачи в области алюминиевых и стеклянных конструкций. Как и многие другие компании, с помощью инвестиций мы внедряем и развиваем новые технологии и системы. Наши конструкции максимально энергоэффективные,  экологические безопасные, повышают естественную освещенность и тёплоемкость без увеличения энергозатрат. За долгое время работ мы хорошо наладили связь и логистику с зарубежными поставщиками фасадных систем и стеклянных конструкций, такими как: Shueco (Германия), New Tec (Италия), Alutech (Беларусь), Raynaers (Бельгия). Без внимание не остаются и отечественные поставщики, такие как: Realit (Россия), AGS (Россия), Сиал (Россия).</p>
+                    <ul class="clearfix">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="our-map block-small" id="Contacts">
+            <div class="our-map-heading heading">Контакты</div>
+            <div class="our-map-container">
+                <div class="our-map-content">
+                    <p>8 <span>(495)</span> 665-29-56   |   8 <span>(926)</span> 253-40-88</p>
+                    <span>E-mail: alumhouse@mail.ru</span>
+                    <span>Адрес: Московская область, Ленинский район, с. Молоково, ул. Школьная д.6а.</span>
+                    <span>Время работы: Пн-Сб., с 8:00 до 18:00.</span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer block-small-520">
+        <!--<div class="container">-->
+            <div class="footer-heading heading">Обратный звонок</div>
+            <div class="footer-text">Оставьте заявку – мы свяжемся с Вами в течении 10 минут</div>
+            <div class="footer-form">
+                <div class="footer-inputs clearfix">
+                    <input type="text" value="Имя">
+                    <input type="text" value="Телефон">
+                    <input type="text" value="Email">
+                </div>
+                <button>Отправить заявку</button>
+            </div>
+        <!--</div>-->
+        <div class="footer-navigation clearfix">
+            <div class="container">
+                <div class="footer-content-logo">
+                    <img src="./src/assets/header/header-logo.png" alt="">
+                </div>
+                <p>© 2016 <span>alumhouse.ru</span> все права защищены</p>
+                <div class="footer-icons">
+                    <i class="fa fa-vk"></i>
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.block-extralarge {
+  height: 870px;
+  position: relative;
+}
+.block-larger {
+  height:780px;
+  position: relative;
+}
+
+.block-large {
+  height: 730px;
+  position: relative;
+}
+
+.block-medium {
+  height: 600px;
+  position: relative;
+}
+
+.block-small {
+  height: 500px;
+  position: relative;
+}
+
+.block-small-520 {
+  height: 520px;
+  position: relative;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+._flr {
+  float: right;
+}
+._fll {
+  float: left;
+}
